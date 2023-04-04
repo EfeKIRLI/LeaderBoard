@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@200;300;600&display=swap');
+*{  list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background: #C7E9B0;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.board1_section{
+    width: 600px;
+    height: 500px;
+    margin: 100px auto 0;
+    background-color: #BACDDB;
+    border-radius: 5px;
+    padding: 25px 40px;
+    position: relative;
+
+}
+
+.board1_section ul{
+     display: flex;
+}
+
+.board1_section ul li{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.board1_section ul li:hover,
+.board1_section ul li.active{
+color: aliceblue;
+}
+
+.board1_section .board_men .img {
+    width: 50px;
+}
+
+.board1_section .board_men .img img {
+    display: block;
+    width: 100%;
+}
+
+.board1_wrapper{
+    position: absolute;
+    top:80px;
+    left: 50px;
+    background:#FDEEDC;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.board1_wrapper .board1_item{
+    padding: 25px;
+}
+
+
+.board1_wrapper .board1_item .board_men{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #FAF8F1;
+}
+
+.board1_wrapper .board1_item .board_men:last-child{
+    border-bottom: 0;
+    padding-bottom: 0   ;
+}
+.board1_wrapper .board1_item .board_men:first-child{
+    padding-top: 0;
+}
+
+.board1_wrapper .board1_item .name_bar {
+    margin: 0 20px;
+    width:calc(100% - 150px) ;
+}
+
+.board1_wrapper .board1_item .name_bar p{
+    color:black ;
+}
+.board1_wrapper .board1_item .name _bar p span{
+    margin-right: 5px;
+}
+
+.board1_wrapper .board1_item .points{
+    width: 100px;
+}
+
+.board1_wrapper .board1_item .bar_wrap{
+    height:5px ;
+    width: 100%;
+    background: #FAF8F1 ;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.board1_wrapper .board1_item .bar_wrap .inner_var{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #DC3535 ;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
